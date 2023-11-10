@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random String Display</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hoy toca😈</h1>
+    <div id="random-string"></div>
+
+    <script>
+        // Array of strings
+        var strings = [
+            "Chat normal domina samu",
+            "Cabrear con historias a paula",
+            "Cabrear a samu",
+            "Chat normal domina paula",
+            "Lovense randoma",
+            "Lovense randoms hardcore",
+            "Lovense samu",
+            "Roleplay",
+        ];
+
+        // Function to display a random string
+        function displayRandomString() {
+            var randomIndex = Math.floor(Math.random() * strings.length);
+            var randomString = strings[randomIndex];
+            document.getElementById("random-string").textContent = randomString;
+        }
+
+        // Initial display
+        displayRandomString();
+    </script>
+</body>
+</html>
